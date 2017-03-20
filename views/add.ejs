@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="public/css/index.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
   <div class="wrapper">
     <h1>添加</h1>
-    <form>
+    <form method="POST" action="/add" enctype="multipart/form-data">
       <div class="title">
-        <input type="text" placeholder="标题">
+        <input type="text" placeholder="标题" name="title">
       </div>
       <div class="content">
-        <textarea  id="" cols="150" rows="30" placeholder="内容"></textarea>
+        <textarea  id="" cols="150" rows="30" placeholder="内容" name="content"></textarea>
       </div>
       <div>
         <input type="submit" value="提交">
